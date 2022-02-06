@@ -1,6 +1,3 @@
-.App {
-  text-align: center;
-}
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +32,59 @@
   to {
     transform: rotate(360deg);
   }
+}
+ 
+
+ /* .card-body{
+  width: 250px;
+  height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+ } */
+
+ /* .pricing{
+   width: 250px;
+  height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+   
+ } */
+.button{
+  margin-top: 10px;
+  
+  align-items: center;
+}
+
+.container{
+  width: 250px;
+  background-color:lightblue;
+  border-radius: 20px;
+  
+}
+.top{
+  display: flex;
+  justify-content: center;
+}
+
+.all{
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  
+}
+.head{
+  text-align: center;
+}
+
+.container:hover {
+  
+  transform: scale(1.1); 
 }
