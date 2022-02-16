@@ -1,7 +1,6 @@
 import "./App.css";
 import Button from '@mui/material/Button';
-import Card from '@mui/material/Card';
-import { margin } from "@mui/system";
+import { BasicForm } from "./BasicForm";
 
 export default function App() {
   const list = [
@@ -51,12 +50,24 @@ export default function App() {
 
   return (
     <div className="App">
-  
-      <div className="all">
+      {/* <div className="all">
         {list.map((lis) => (
-        <Hai name={lis.name} price={lis.price} period={lis.period} user={lis.user} Storage={lis.Storage} Projects={lis.Projects} Access={lis.Access} PrivateProjects={lis.PrivateProjects} PhoneSupport={lis.PhoneSupport} Subdomain={lis.Subdomain} StatusReports={lis.StatusReports} />
-      ))}
-      </div>
+          <Hai
+            name={lis.name}
+            price={lis.price}
+            period={lis.period}
+            user={lis.user}
+            Storage={lis.Storage}
+            Projects={lis.Projects}
+            Access={lis.Access}
+            PrivateProjects={lis.PrivateProjects}
+            PhoneSupport={lis.PhoneSupport}
+            Subdomain={lis.Subdomain}
+            StatusReports={lis.StatusReports}
+          />
+        ))}
+      </div> */}
+      <BasicForm />
     </div>
   );
 }
@@ -98,3 +109,5 @@ function Hai({ name, price, period, user, Storage, Projects, Access, PrivateProj
     
   );
 }
+
+
