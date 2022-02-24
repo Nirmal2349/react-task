@@ -1,4 +1,3 @@
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -33,9 +32,8 @@
     transform: rotate(360deg);
   }
 }
- 
 
- /* .card-body{
+/* .card-body{
   width: 250px;
   height: 400px;
     display: flex;
@@ -45,7 +43,7 @@
     align-items: center;
  } */
 
- /* .pricing{
+/* .pricing{
    width: 250px;
   height: 400px;
     display: flex;
@@ -55,36 +53,68 @@
     align-items: center;
    
  } */
-.button{
+.button {
   margin-top: 10px;
-  
+
   align-items: center;
 }
 
-.container{
+.container {
   width: 250px;
-  background-color:lightblue;
+  background-color: lightblue;
   border-radius: 20px;
-  
 }
-.top{
+.top {
   display: flex;
   justify-content: center;
 }
 
-.all{
+.all {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-top: 20px;
-  
 }
-.head{
+.head {
   text-align: center;
 }
 
 .container:hover {
-  
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
+
+.recipe-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin: 24px;
+}
+
+.recipe-picture {
+  height: 540px;
+  width: 750px;
+  object-fit: cover;
+}
+
+.recipe-container {
+  background-color: white;
+  width: 750px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: rgb(0 0 0 / 24%) 1px 2px 13px;
+}
+
+.recipe-name {
+  padding: 16px;
+  font-size: 48px;
+
+  /* font-weight: bold; */
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: Roboto;
+}
+
