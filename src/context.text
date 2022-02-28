@@ -1,0 +1,22 @@
+ function App() {
+  const name = "nemo 😇";
+
+  return (
+    <div className="App">
+      <Dashboard name={name} />
+    </div>
+  );
+}
+
+function Dashboard({name}) {
+  return (
+    <div>
+      <h1> Dashboard </h1>
+      <User name={name} />
+    </div>
+  );
+}
+
+function User({ name }) {
+  return <h3>Welcome {name}</h3>;
+}

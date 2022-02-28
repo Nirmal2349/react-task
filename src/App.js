@@ -1,6 +1,6 @@
 import "./App.css";
 import { Link, Route, Switch } from "react-router-dom";
-
+import React, { useEffect } from "react";
 // import { BasicForm } from "./BasicForm";
 // import { Hai } from "./Hai";
 
@@ -124,6 +124,12 @@ function Recipelist() {
       name: "Parotta shawarma",
     },
   ];
+
+  useEffect(() => {
+    fetch("https://6209ed5e92946600171c55ba.mockapi.io/recipe")
+      .then((data) => data.json())
+      .then((recipes) => console.log(recipes));
+  }, []);
   return (
     <div>
       <h1>{message1}</h1>
@@ -144,3 +150,5 @@ function Recipepicture({ recipe }) {
     </div>
   );
 }
+
+
