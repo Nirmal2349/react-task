@@ -1,3 +1,14 @@
+ refer this link for context > props drilling
+ 
+ https://codesandbox.io/s/relaxed-shannon-ohc4sh
+
+https://codesandbox.io/s/relaxed-shannon-ohc4sh?file=/src/App.js
+
+https://bit.ly/react-router-5
+
+ 
+ 
+ 
  function App() {
   const name = "nemo 😇";
 
@@ -19,4 +30,58 @@ function Dashboard({name}) {
 
 function User({ name }) {
   return <h3>Welcome {name}</h3>;
+}
+
+
+
+
+import { createContext, useContext } from "react";
+import "./styles.css";
+
+const userCtx = createContext(null);
+
+export default function App() {
+  const name = "nemo 😇";
+  const pic = "https://t3.ftcdn.net/jpg/03/91/19/22/360_F_391192211_2w5pQpFV1aozYQhcIw3FqA35vuTxJKrB.jpg";
+
+  return (
+    <div className="App">
+      {/* normal method */}
+      {/* <userCtx.Provider value={name}> */}
+
+      {/* array method */}
+      {/* <userCtx.Provider value={[ name, pic]}> */}
+{/* for object */}
+      <userCtx.Provider value={{name:name, pic:pic}}>
+        <Dashboard />
+      </userCtx.Provider>
+    </div>
+  );
+}
+
+function Dashboard() {
+  return (
+    <div>
+      <h1> Dashboard </h1>
+      <User />
+    </div>
+  );
+}
+
+function User() {
+  //  normal method
+  // const abc = useContext(userCtx);
+
+  // for array method
+  // const [ abc, pic] = useContext(userCtx);
+ 
+  // for object method
+  const {name,pic} = useContext(userCtx);
+  
+  return(
+    <div>
+     <img src={pic} alt={name}/> 
+    <h3>Welcome,{name} </h3>
+    </div>
+  )
 }
