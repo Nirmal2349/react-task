@@ -73,7 +73,7 @@ export default function App() {
       ];
 
   return (
-    <div className="App">
+    <div className="App phone-list-container">
       {/* <div className="all">
         {list.map((lis) => (
           <Hai
@@ -108,7 +108,9 @@ export default function App() {
           <Welcome />
         </Route>
       </Switch> */}
-      {mobile.map((mobile) =><Phone  mobile= {mobile}/>)}
+      {mobile.map((mobile) => (
+        <Phone mobile={mobile} />
+      ))}
     </div>
   );
 }

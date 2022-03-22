@@ -53,7 +53,7 @@
     align-items: center;
    
  } */
-.button {
+/* .button {
   margin-top: 10px;
 
   align-items: center;
@@ -110,13 +110,12 @@
   padding: 16px;
   font-size: 48px;
 
-  /* font-weight: bold; */
-}
+} */
 
-body {
+/* body {
   background-color: whitesmoke;
   font-family: Roboto;
-}
+} */
 
 .phone-picture {
   height: 540px;
@@ -148,7 +147,19 @@ body {
   margin-top: 0px;
 }
 
+.phone-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin: 24px;
+}
 
+body {
+  background-color: whitesmoke;
+  font-family: Roboto;
+  margin: 16px;
+}
 
 .phone-list-container {
   display: flex;
@@ -158,8 +169,6 @@ body {
   margin: 24px;
 }
 
-/* body {
-  background-color: whitesmoke;
-  font-family: Roboto;
-  margin: 16px;
-} */
+.App {
+  text-align: center;
+}
